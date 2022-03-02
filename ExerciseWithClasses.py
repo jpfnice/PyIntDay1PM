@@ -22,5 +22,25 @@ with open("data.txt") as fic:
     first=fic.readline()
     for line in fic:
         print(line)
+        
+class Record:
+    a constructor (__init__())
+    a way to convert a Record into a String (__str__(), __repr__())
+    4 attributes: city, time, date, temperature for instance
+    
+class ListOfRecord:
+    a constructor (__init__())
+    a class method to transform a text file into a ListOfRecord (parseFile())
+    a method to compute the average of the temperature recorded for a given
+    city (average())
+    a method to save a ListOfRecord into a file (using pickle) (save())
+    a class method to load a ListOfRecord from a file (using pickle) (load())
+    the method(s) needed to iterate trough a ListOfRecord (__iter__())
+    1 attribute: a list to store the Record
+    Optionally: 
+            method to add/remove Record from the ListOfRecord (append(), remove(), ...)
+            method to compute the length of a ListOfRecord (__len__())
+            method to compare 2 ListOfRecords with == (__eq__())
+            ...
 
 '''
